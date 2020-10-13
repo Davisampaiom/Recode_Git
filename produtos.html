@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Full Stack Eletro</title>
+    <link href="style.css" rel="stylesheet">
+    <script type="text/javascript" src="index.js"></script>
+</head>
+
+<body>
+
+    <!-- menu-->
+    <nav class="menu">
+        <a id="logo" href="index.html"><img width=100px src=./img/logo.png alt="Flil Stack Eletro" onmouseover="destaque(this, '120px')" onmouseout="destaque(this,'100px')">
+            <a href="produtos.html" onmouseover="mudarFonte(this, '25px')" onmouseout="mudarFonte(this, '15px')" >Nossos produtos</a>
+            <a href="contato.html" onmouseover="mudarFonte(this, '25px')"  onmouseout="mudarFonte(this, '15px')">Fale conosco</a>
+            <a href="loja.html" onmouseover="mudarFonte(this, '25px')" onmouseout="mudarFonte(this, '15px')">Lojas</a>
+        </a>
+    </nav>
+    <!--  menu-->
+    <header>
+        <h2>
+            Produtos
+        </h2>
+    </header>
+    <hr><br>
+    <div class="pagProdutos">
+        <div class="categorias">
+            <h3>Categorias</h3>
+            <p onclick="exibirTodos()" onmouseover="mudarFonte(this, '20px')" onmouseout="mudarFonte(this, '15px')" >Todos(12)</p>
+            <p onclick="exibirCategoria('geladeira')" onmouseover="mudarFonte(this, '20px')" onmouseout="mudarFonte(this, '15px')">Gladeiras(3)</p>
+            <p onclick="exibirCategoria('fogao')" onmouseover="mudarFonte(this, '20px')" onmouseout="mudarFonte(this, '15px')">Fogões(2)</p>
+            <p onclick="exibirCategoria('microondas')" onmouseover="mudarFonte(this, '20px')" onmouseout="mudarFonte(this, '15px')">Microondas(3)</p>
+            <p onclick="exibirCategoria('lavadoraDeRoupas')" onmouseover="mudarFonte(this, '20px')" onmouseout="mudarFonte(this, '15px')">Lavadora de roupas(2)</p>
+            <p onclick="exibirCategoria('lavaLoucas')" onmouseover="mudarFonte(this, '20px')" onmouseout="mudarFonte(this, '15px')">Lava-louças(2)</p>
+        </div>
+
+        <div class="produtos">
+            <div class="box_produtos" id="geladeira">
+                <img src="./img/geladeira1.jpg" width=150px onmouseover="destaque(this, '195px')" onmouseout="destaque(this,'150px')" >
+                <br>
+                <p class="descricao">Geladeira Brastemp Frost Free Inverse 573 litros cor Inox com Smart Bar</p>
+                <hr><br>
+                <p class="descricao"><strike> R$ 4.514,90</strike></p><br>
+                <p class="preco">R$ 3.869,10</p><br>
+            </div>
+
+            <div class="box_produtos" id="geladeira" style="display: block;">
+                <img src="./img/geladeira2.jpg" width=150px onmouseover="destaque(this, '195px')" onmouseout="destaque(this,'150px')" onclick="destaque(this)">
+                <br><br>
+                <p class="descricao">
+                    Geladeira Electrolux TF56 Frost Free Duplex 474 Litrosr</p>
+                <hr><br>
+                <p class="descricao"><strike>R$ 3.398,00</strike></p><br>
+                <p class="preco">R$ 2.659,05</p><br>
+            </div>
+
+            <div class="box_produtos" id="geladeira" style="display: block;">
+                <img src="./img/geladeira3.jpg" width=150px onmouseover="destaque(this, '195px')" onmouseout="destaque(this,'150px')" onclick="destaque(this)">
+                <br><br>
+                <p class="descricao">
+                    Geladeira Consul CRM43HK Frost Free Duplex 386 Litros Inox</p>
+                <hr><br>
+                <p class="descricao"><strike>R$ 2.968,90</strike></p><br>
+                <p class="preco">R$ 2.849,90</p><br>
+            </div>
+
+            <div class="box_produtos" id="fogao" style="display: block;">
+                <img src="./img/fogao1.jpg" width=150px onmouseover="destaque(this, '195px')" onmouseout="destaque(this,'150px')" onclick="destaque(this)">
+                <br>
+                <p class="descricao">
+                    Fogão Consul Glass 4 Bocas CFO4VARUNA Acendimento Automático Inox</p>
+                <hr><br>
+                <p class="descricao"><strike>R$ 1.359,00</strike></p><br>
+                <p class="preco">R$ 1.199,90</p><br>
+            </div>
+
+            <div class="box_produtos" id="fogao" style="display: block;">
+                <img src="./img/fogao2.jpg" width=150px onmouseover="destaque(this, '195px')" onmouseout="destaque(this,'150px')" onclick="destaque(this)">
+                <br>
+                <p class="descricao">
+                    Fogão de Piso Atlas Mônaco Glass 4 Bocas Acendimento Automático</p>
+                <hr><br>
+                <p class="descricao"><strike>R$ 522,00</strike></p><br>
+                <p class="preco">R$ 419,90</p><br>
+            </div>
+
+            <div class="box_produtos" id="microondas" style="display: block;">
+                <img src="./img/microondas1.jpg" width=150px onmouseover="destaque(this, '195px')" onmouseout="destaque(this,'150px')" onclick="destaque(this)">
+                <br>
+                <p class="descricao">
+                    Microondas Consul 32 Litros cor Inox Espelhado com Função Descongelar</p>
+                <hr><br>
+                <p class="descricao"><strike>R$ 839,00</strike></p><br>
+                <p class="preco">R$ 689,00 </p><br>
+            </div>
+
+            <div class="box_produtos" id="microondas" style="display: block;">
+                <img src="./img/microondas2.jpg" width=150px onmouseover="destaque(this, '195px')" onmouseout="destaque(this,'150px')" onclick="destaque(this)">
+                <br><br>
+                <p class="descricao">
+                    Microondas 25L Espelhado Pme25 Philco</p>
+                <hr><br>
+                <p class="descricao"><strike>R$ 847,00</strike></p><br>
+                <p class="preco">R$ 579,99 </p><br>
+            </div>
+
+            <div class="box_produtos" id="microondas" style="display: block;">
+                <img src="./img/microondas3.jpg" width=150px onmouseover="destaque(this, '195px')" onmouseout="destaque(this,'150px')" onclick="destaque(this)">
+                <br><br>
+                <p class="descricao">
+                    Micro-ondas Electrolux 20 Litros MTO30</p>
+                <hr><br>
+                <p class="descricao"><strike>R$ 529,00</strike></p><br>
+                <p class="preco">R$ 426,99 </p><br>
+            </div>
+
+            <div class="box_produtos" id="lavaLoucas" style="display: block;">
+                <img src="./img/lava_loucas1.jpg" width=150px onmouseover="destaque(this, '195px')" onmouseout="destaque(this,'150px')" onclick="destaque(this)">
+                <br>
+                <p class="descricao">
+                    Lava-Louças Electrolux, 10 Serviços, Painel Blue Touch, Inox - LV10X</p>
+                <hr><br>
+                <p class="descricao"><strike>R$ 4.529,00</strike></p><br>
+                <p class="preco">R$ 3.649,00 </p><br>
+            </div>
+
+            <div class="box_produtos" id="lavaLoucas" style="display: block;">
+                <img src="./img/lava_loucas2.jpg" width=150px onmouseover="destaque(this, '195px')" onmouseout="destaque(this,'150px')" onclick="destaque(this)">
+                <br><br>
+                <p class="descricao">
+                    Lava Louças Brastemp Ative 8 Serviços Branca - BLF08</p>
+                <hr><br>
+                <p class="descricao"><strike>R$ 1.929,00</strike></p><br>
+                <p class="preco">R$ 1.749,00 </p><br>
+            </div>
+
+            <div class="box_produtos" id="lavadoraDeRoupas" style="display: block;">
+                <img src="./img/lava_roupas1.jpg" width=150px onmouseover="destaque(this, '195px')" onmouseout="destaque(this,'150px')" onclick="destaque(this)">
+                <br>
+                <p class="descricao">
+                    Lavadora de Roupas Brastemp 9kg Branca com 08 Programas de Lavagem e Enxágue Duplo</p>
+                <hr><br>
+                <p class="descricao"><strike>R$ 1.929,00</strike></p><br>
+                <p class="preco">R$ 1.549,00 </p><br>
+            </div>
+
+            <div class="box_produtos" id="lavadoraDeRoupas" style="display: block;">
+                <img src="./img/lava_roupas2.jpg" width=150px onmouseover="destaque(this, '195px')" onmouseout="destaque(this,'150px')" onclick="destaque(this)">
+                <br><br>
+                <p class="descricao">
+                    Lavadora de Roupas Philco Inverter 12KG PLR12B</p>
+                <hr><br>
+                <p class="descricao"><strike>R$ 3.229,00</strike></p><br>
+                <p class="preco">R$ 2.899,90 </p><br>
+            </div>
+
+
+        </div>
+
+    </div>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+
+    <!-- rodape -->
+    <footer id="rodape">
+        <p id="pagamento">Formas de pagamento</p>
+        <img src="./img/pagamento.jpg" width="300px alt=" Formas de pagamento">
+        <p>&copy; Recode Pro</p>
+    </footer>
+    <!-- rodape -->
+
+
+</body>
+
+</html>

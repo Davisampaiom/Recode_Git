@@ -1,0 +1,101 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15\px;
+}
+/* menu*/
+.menu{
+    display: flex;
+    background-color: red;
+    height: 80px;
+}
+.menu a {
+    color: white;
+    margin: auto;
+    text-decoration: none;}
+#logo{
+    margin-left: 0%;}
+    /* menu*/
+
+    /* rodape*/
+#rodape{
+    text-align: center;
+}
+#pagamento{
+    color: red;}
+  /* rodape*/
+
+  /* Nossas lojas*/
+.containerEnd{ 
+    display: flex;
+    align-content: center; 
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;    
+}
+.end{
+   margin-left: 10%;
+   float: left;   }
+   /* Nossas lojas*/
+
+/* Contato*/
+ #Mensagem{
+     margin: 0px;
+     height: 200px;
+     width: 330px;
+ }
+   /* Contato*/
+
+   /* Produtos*/
+.pagProdutos{
+    width: 100%;
+    height: 100%;
+}
+.categorias{
+   white-space: nowrap;
+   height: 140px;
+}
+.produtos{
+    display: flex;
+    margin-top: -13%;
+    margin-left: 15%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+.box_produtos{
+    display: inline-block;
+    width: 170px;
+    height: auto;
+    font-size: 75%;
+    text-align: center ;
+    margin-right: 2%;
+    margin-left: 2%;
+    justify-content: center;
+    align-items: center;
+    
+ 
+}
+.descricao{
+    text-align: center;
+    margin-top: -3%;
+    padding: 0%;
+
+}
+.preco{
+    text-align: center;
+    color: red;
+    margin-top: -10%;
+    padding: 0%;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+   /* Produtos*/
+
+
+   
+
+
+
